@@ -29,6 +29,7 @@ public class LoginActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                validate(Username.getText().toString(), Password.getText().toString());
+                setContentView(R.layout.activity_main);
             }
         });
 
@@ -37,7 +38,7 @@ public class LoginActivity extends AppCompatActivity {
     }
 
     private void validate(String userName, String userPassword){
-        if((userName.equals("hnogueiras4484")) && (userPassword.equals("1234"))) {
+        if((userName.equals("mark3133")) && (userPassword.equals("1234"))) {
             Intent intent = new Intent(LoginActivity.this, MainActivity.class);
             startActivity(intent);
         }
